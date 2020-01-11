@@ -44,7 +44,8 @@ int main(int argc, char **argv) {
         std::cout << termcolor::red << "difference: " << htime / dtime << std::endl;
 
         const array a = array(seq(1,9), 3, 3);
-        std::cout << a.dims() << std::endl;
+        std::cout << "dims: " << a.dims() << std::endl;
+        std::cout << "numdims: " << a.numdims() << std::endl;
     } catch (exception &e) {
         fprintf(stderr, "%s\n", e.what());
         throw;
